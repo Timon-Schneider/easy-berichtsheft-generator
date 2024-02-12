@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="org.ebg.Main">
+  <grid id="27dc6" binding="MainPanel" layout-manager="GridBagLayout">
+    <constraints>
+      <xy x="20" y="20" width="880" height="814"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <scrollpane id="c21d7" binding="paneSchoolDays">
+        <constraints>
+          <grid row="2" column="2" row-span="18" col-span="6" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="0.0"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="2ba06" class="javax.swing.JTable" binding="schoolDaysTable">
+            <constraints/>
+            <properties>
+              <preferredScrollableViewportSize width="0" height="0"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <scrollpane id="76fbe" binding="paneHolidays">
+        <constraints>
+          <grid row="23" column="2" row-span="1" col-span="6" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="e0dea" class="javax.swing.JTable" binding="holidaysTable">
+            <constraints/>
+            <properties>
+              <preferredScrollableViewportSize width="0" height="0"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="a3fde" class="javax.swing.JLabel" binding="firstNameLabel">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.2" weighty="0.0" ipadx="20"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="languages" key="first.name"/>
+        </properties>
+      </component>
+      <component id="1dd96" class="javax.swing.JTextField" binding="firstNameTextField" default-binding="true">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <gridbag weightx="0.5" weighty="0.0" ipadx="60"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="languages" key="first.name1"/>
+        </properties>
+      </component>
+      <component id="62117" class="javax.swing.JLabel" binding="lastNameLabel">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0" ipadx="20"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="languages" key="last.name"/>
+        </properties>
+      </component>
+      <component id="db92d" class="javax.swing.JTextField" binding="lastNameTextField" default-binding="true">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="languages" key="last.name1"/>
+        </properties>
+      </component>
+      <component id="82f5d" class="javax.swing.JLabel" binding="jobLabel">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0" ipadx="20"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="languages" key="job"/>
+        </properties>
+      </component>
+      <component id="a125" class="javax.swing.JTextField" binding="jobTextField" default-binding="true">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="languages" key="job1"/>
+        </properties>
+      </component>
+      <component id="550ff" class="javax.swing.JButton" binding="schoolDaysPlusButton">
+        <constraints>
+          <grid row="20" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="+"/>
+        </properties>
+      </component>
+      <component id="7a14f" class="javax.swing.JButton" binding="schoolDaysMinusButton">
+        <constraints>
+          <grid row="20" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="-"/>
+        </properties>
+      </component>
+      <component id="cc1ab" class="javax.swing.JButton" binding="holidaysMinusButton">
+        <constraints>
+          <grid row="24" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="-"/>
+        </properties>
+      </component>
+      <component id="ffd9" class="javax.swing.JButton" binding="generateButton" default-binding="true">
+        <constraints>
+          <grid row="28" column="0" row-span="1" col-span="8" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="languages" key="generate"/>
+        </properties>
+      </component>
+      <component id="8ca70" class="javax.swing.JButton" binding="holidaysPlusButton">
+        <constraints>
+          <grid row="24" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="+"/>
+        </properties>
+      </component>
+      <component id="fb515" class="javax.swing.JLabel" binding="schoolDaysLabel">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="languages" key="schooldays"/>
+        </properties>
+      </component>
+      <component id="6f6ab" class="javax.swing.JLabel" binding="holidaysLabel">
+        <constraints>
+          <grid row="21" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="languages" key="holidays"/>
+        </properties>
+      </component>
+      <scrollpane id="ebe65" binding="paneTasks">
+        <constraints>
+          <grid row="23" column="0" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="1.0"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="b5ecf" class="javax.swing.JTable" binding="tasksTable">
+            <constraints/>
+            <properties>
+              <preferredScrollableViewportSize width="450" height="100"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="232f6" class="javax.swing.JButton" binding="tasksPlusButton">
+        <constraints>
+          <grid row="24" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="+"/>
+        </properties>
+      </component>
+      <component id="2ad8c" class="javax.swing.JButton" binding="tasksMinusButton">
+        <constraints>
+          <grid row="24" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="-"/>
+        </properties>
+      </component>
+      <component id="5d8d3" class="javax.swing.JLabel" binding="tasksLabel">
+        <constraints>
+          <grid row="21" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="languages" key="tasks"/>
+        </properties>
+      </component>
+      <component id="9e363" class="javax.swing.JLabel" binding="workDaysLabel">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="languages" key="workdays"/>
+        </properties>
+      </component>
+      <component id="11c5c" class="javax.swing.JCheckBox" binding="mondayCheckBox" default-binding="true">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <selected value="true"/>
+          <text resource-bundle="languages" key="monday"/>
+        </properties>
+      </component>
+      <component id="e2bc3" class="javax.swing.JCheckBox" binding="tuesdayCheckBox" default-binding="true">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <selected value="true"/>
+          <text resource-bundle="languages" key="tuesday"/>
+        </properties>
+      </component>
+      <component id="841b" class="javax.swing.JCheckBox" binding="wednesdayCheckBox" default-binding="true">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <selected value="true"/>
+          <text resource-bundle="languages" key="wednesday"/>
+        </properties>
+      </component>
+      <component id="4e531" class="javax.swing.JCheckBox" binding="thursdayCheckBox" default-binding="true">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <selected value="true"/>
+          <text resource-bundle="languages" key="thursday"/>
+        </properties>
+      </component>
+      <component id="3380b" class="javax.swing.JCheckBox" binding="fridayCheckBox" default-binding="true">
+        <constraints>
+          <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <selected value="true"/>
+          <text resource-bundle="languages" key="friday"/>
+        </properties>
+      </component>
+      <component id="4bee7" class="javax.swing.JCheckBox" binding="saturdayCheckBox" default-binding="true">
+        <constraints>
+          <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="languages" key="saturday"/>
+        </properties>
+      </component>
+      <component id="4ec96" class="javax.swing.JCheckBox" binding="sundayCheckBox" default-binding="true">
+        <constraints>
+          <grid row="11" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="languages" key="sunday"/>
+        </properties>
+      </component>
+      <component id="72c5d" class="javax.swing.JLabel" binding="templateLabel">
+        <constraints>
+          <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="languages" key="template"/>
+        </properties>
+      </component>
+      <component id="49b81" class="javax.swing.JTextField" binding="chooseATemplateTextField" default-binding="true">
+        <constraints>
+          <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <text resource-bundle="languages" key="choose.a.template"/>
+        </properties>
+      </component>
+      <component id="e4879" class="javax.swing.JButton" binding="chooseFileButton" default-binding="true">
+        <constraints>
+          <grid row="13" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="languages" key="choose.file"/>
+        </properties>
+      </component>
+      <component id="39805" class="javax.swing.JButton" binding="generateSchooldaysButton" default-binding="true">
+        <constraints>
+          <grid row="20" column="5" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="languages" key="generate.schooldays"/>
+        </properties>
+      </component>
+      <component id="ba2aa" class="javax.swing.JButton" binding="generateFromICSFileButton" default-binding="true">
+        <constraints>
+          <grid row="24" column="5" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="languages" key="generate.from.ics.ical.file"/>
+        </properties>
+      </component>
+      <component id="73a60" class="javax.swing.JLabel" binding="fromDateLabel">
+        <constraints>
+          <grid row="26" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="languages" key="from.date"/>
+        </properties>
+      </component>
+      <component id="b5163" class="javax.swing.JFormattedTextField" binding="fromDateFormattedTextField">
+        <constraints>
+          <grid row="26" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <focusLostBehavior value="0"/>
+        </properties>
+      </component>
+      <component id="9a42a" class="javax.swing.JLabel" binding="toDateLabel">
+        <constraints>
+          <grid row="27" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="languages" key="to.date"/>
+        </properties>
+      </component>
+      <component id="9a813" class="javax.swing.JFormattedTextField" binding="toDateFormattedTextField">
+        <constraints>
+          <grid row="27" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <focusLostBehavior value="0"/>
+        </properties>
+      </component>
+      <component id="9c79a" class="javax.swing.JLabel" binding="generationPeriodLabel">
+        <constraints>
+          <grid row="25" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="languages" key="generation.period"/>
+        </properties>
+      </component>
+      <component id="c7dbc" class="javax.swing.JLabel" binding="apprenticeshipYearLabel">
+        <constraints>
+          <grid row="26" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0" ipadx="10"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="languages" key="apprenticeship.year"/>
+        </properties>
+      </component>
+      <component id="8e27" class="javax.swing.JSpinner" binding="apprenticeshipYearSpinner">
+        <constraints>
+          <grid row="26" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0" ipadx="20"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="afbf1" class="javax.swing.JButton" binding="apprenticeshipYearHelpButton">
+        <constraints>
+          <grid row="26" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="?"/>
+        </properties>
+      </component>
+      <component id="cf2ce" class="javax.swing.JLabel" binding="hiringMonthLabel">
+        <constraints>
+          <grid row="27" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0" ipadx="10"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="languages" key="hiring.month"/>
+        </properties>
+      </component>
+      <component id="34fb2" class="javax.swing.JSpinner" binding="hiringMonthSpinner">
+        <constraints>
+          <grid row="27" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="ccd91" class="javax.swing.JButton" binding="hiringMonthHelpButton">
+        <constraints>
+          <grid row="27" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="?"/>
+        </properties>
+      </component>
+      <component id="6d88e" class="javax.swing.JLabel" binding="minDailyTasksLabel">
+        <constraints>
+          <grid row="15" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="languages" key="min.daily.tasks"/>
+        </properties>
+      </component>
+      <component id="42b46" class="javax.swing.JSpinner" binding="minDailyTasksSpinner">
+        <constraints>
+          <grid row="15" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="90ae6" class="javax.swing.JSpinner" binding="maxDailyTasksSpinner">
+        <constraints>
+          <grid row="16" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="7df5c" class="javax.swing.JLabel" binding="maxDailyTasksLabel">
+        <constraints>
+          <grid row="16" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="languages" key="max.daily.tasks"/>
+        </properties>
+      </component>
+      <vspacer id="72fb4">
+        <constraints>
+          <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0" ipady="10"/>
+        </constraints>
+      </vspacer>
+      <component id="624cf" class="javax.swing.JButton" binding="dailyTasksHelpButton">
+        <constraints>
+          <grid row="17" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="?"/>
+        </properties>
+      </component>
+      <component id="67e03" class="javax.swing.JLabel" binding="startPageLabel">
+        <constraints>
+          <grid row="26" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0" ipadx="10"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="languages" key="start.page"/>
+        </properties>
+      </component>
+      <component id="3a8ab" class="javax.swing.JSpinner" binding="startPageSpinner">
+        <constraints>
+          <grid row="26" column="6" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0" ipadx="20"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="9fac0" class="javax.swing.JLabel" binding="workingHoursLabel">
+        <constraints>
+          <grid row="18" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="languages" key="working.hours"/>
+        </properties>
+      </component>
+      <component id="91f2" class="javax.swing.JSpinner" binding="workingHoursSpinner">
+        <constraints>
+          <grid row="18" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="486b6" class="javax.swing.JButton" binding="generateFromICSFileHelpButton">
+        <constraints>
+          <grid row="24" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="?"/>
+        </properties>
+      </component>
+      <component id="3b4e3" class="javax.swing.JButton" binding="tasksHelpButton">
+        <constraints>
+          <grid row="22" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="?"/>
+        </properties>
+      </component>
+      <component id="a313d" class="javax.swing.JButton" binding="schoolDaysHelpButton">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="?"/>
+        </properties>
+      </component>
+      <component id="d376f" class="javax.swing.JButton" binding="holidaysHelpButton">
+        <constraints>
+          <grid row="22" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="?"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
