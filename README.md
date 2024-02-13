@@ -16,7 +16,7 @@ Beim ersten Start ist alles ist bereits vorkonfiguriert. Klicke einfach auf die 
 
 ## Verwendung
 
-- [HIER](https://github.com/Timon-Schneider/easy-berichtsheft-generator/releases/latest) unter Assets die .zip Datei herunterladen
+- [HIER](https://github.com/Timon-Schneider/easy-berichtsheft-generator/releases/latest/download/easy-berichtsheft-generator-EXE-and-JAR.zip) die .zip Datei herunterladen
 - "easy-berichtsheft-generator.exe" oder "easy-berichtsheft-generator.jar" starten.
 - Ausbildungstätigkeiten gesammelt in die Tabelle eintragen.
   Es müssen mindestens so viele Tätigkeiten eingetragen werden wie später pro Tag generiert werden sollen.
@@ -98,7 +98,7 @@ Everything is already preconfigured when you first start. Simply click on the "G
 
 ## Usage
 
-- Download the .zip file [HERE](https://github.com/Timon-Schneider/easy-berichtsheft-generator/releases/latest) under Assets
+- Download the .zip file [HERE](https://github.com/Timon-Schneider/easy-berichtsheft-generator/releases/latest/download/easy-berichtsheft-generator-EXE-and-JAR.zip)
 - Start "easy-berichtsheft-generator.exe" or "easy-berichtsheft-generator.jar".
 - Enter your Tasks collectively in the table.
   At least as many Tasks must be entered as are to be generated later per day.
